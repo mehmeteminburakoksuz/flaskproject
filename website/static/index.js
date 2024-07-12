@@ -6,3 +6,12 @@ function deleteNote(noteId) {
     window.location.href = "/";
   });
 }
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('addSquareButton').addEventListener('click', () => {
+      document.getElementById('addSquareForm').submit();
+  });
+});
+
+function showContent(squareId) {
+  window.location.href = `/square/${squareId}`;
+}
